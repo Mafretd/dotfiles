@@ -1,0 +1,57 @@
+# Suckless 
+
+*.o
+*.orig
+*.rej
+st
+util.o
+dwm
+dwm.o
+drw.o
+dmenu
+stest
+
+!/.local/share/dwm/
+!/.local/share/dwm/autostart.sh
+
+# Emacs
+
+# Remove backup files
+*#
+*.
+*.elc
+*~
+.#*
+
+# Native-compiled *.eln files
+eln-cache/
+
+# Emacs packages
+elpa/
+var/
+tree-sitter/
+tutorial/
+
+#  Emacs tmp files & Misc
+/.mc-lists.el
+/.DS_Store
+/.emacs.desktop
+/.emacs.desktop.lock
+/.watsonresults
+/ac-comphist.dat
+/auto-save-list
+/eshell/history
+/eshell/lastdir
+/newsticker/feeds/
+/snippets/
+/tramp
+/url/cookies
+/.python-environments/
+.emacs.d/ido.last
+.emacs.d/smex-items
+/places
+/private.el
+/games/
+/bookmarks
+/projectile-bookmarks.eld
+/projectile.cache 

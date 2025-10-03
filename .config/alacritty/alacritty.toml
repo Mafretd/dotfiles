@@ -1,0 +1,46 @@
+#Alacritty configuration
+
+[shell]
+program = "/usr/bin/bash"
+
+[scrolling]
+history = 100000
+
+[window]
+padding = { x = 0, y = 0 }
+dynamic_padding = true
+startup_mode = "Maximized"
+decorations = "None"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[cursor]
+blink_timeout = 0
+blink_interval = 600
+
+[cursor.style]
+blinking = "Always"
+
+[font]
+size = 16
+
+[font.normal]
+family = "Commit Mono"
+style = "Regular"
+
+[font.bold]
+family = "Commit Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Commit Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Commit Mono"
+style = "Italic"
+
+[mouse]
+hide_when_typing = true

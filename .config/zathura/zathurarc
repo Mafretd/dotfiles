@@ -1,0 +1,14 @@
+# Enable copy paste
+set selection-clipboard clipboard
+
+# Colors
+set default-bg "#808080"
+
+set font "Cantarell 10"
+
+#Statusbar
+set statusbar-basename "true"
+set statusbar-page-percent "true"
+
+#Window
+set window-title-basename "true"
