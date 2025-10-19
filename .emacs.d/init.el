@@ -23,8 +23,8 @@
 (setq delete-by-moving-to-trash t)
 
 (set-face-attribute 'default nil
-		    :family "Commit Mono"
-		    :height 160
+		    :family "Monego"
+		    :height 150
 		    :weight 'regular
 		    )
 

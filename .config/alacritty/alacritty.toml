@@ -24,22 +24,22 @@ blink_interval = 600
 blinking = "Always"
 
 [font]
-size = 16
+size = 15
 
 [font.normal]
-family = "Commit Mono"
+family = "Monego"
 style = "Regular"
 
 [font.bold]
-family = "Commit Mono"
 style = "Bold"
+family = "Monego"
 
 [font.bold_italic]
-family = "Commit Mono"
+family = "Monego"
 style = "Bold Italic"
 
 [font.italic]
-family = "Commit Mono"
+family = "Monego"
 style = "Italic"
 
 [mouse]
