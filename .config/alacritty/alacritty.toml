@@ -24,23 +24,24 @@ blink_interval = 600
 blinking = "Always"
 
 [font]
-size = 15
+size = 14.5
 
 [font.normal]
 family = "Monego"
 style = "Regular"
 
-[font.bold]
-style = "Bold"
+[font.italic]
 family = "Monego"
+style = "Italic"
+
+[font.bold]
+family = "Monego"
+style = "Bold"
 
 [font.bold_italic]
 family = "Monego"
 style = "Bold Italic"
 
-[font.italic]
-family = "Monego"
-style = "Italic"
 
 [mouse]
 hide_when_typing = true
