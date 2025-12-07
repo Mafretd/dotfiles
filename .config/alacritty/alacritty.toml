@@ -24,7 +24,7 @@ blink_interval = 600
 blinking = "Always"
 
 [font]
-size = 14.5
+size = 15
 
 [font.normal]
 family = "Monego"
