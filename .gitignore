@@ -55,3 +55,4 @@ tutorial/
 /bookmarks
 /projectile-bookmarks.eld
 /projectile.cache 
+.emacs.d/transient/
