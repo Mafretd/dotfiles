@@ -23,9 +23,9 @@
 (setq delete-by-moving-to-trash t)
 
 (set-face-attribute 'default nil
-		    :family "Monego"
+		    :family "Google Sans Code"
 		    :height 150
-		    :weight 'regular
+		    :weight 'light
 		    )
 
 (global-display-line-numbers-mode)
@@ -34,8 +34,21 @@
 
 (setq ring-bell-function 'ignore)
 
-(load-theme 'hc-zenburn :no-confirm)
- 
+(require-theme 'modus-themes)
+
+(setq modus-themes-italic-constructs t
+      modus-themes-bold-constructs t)
+
+(setq modus-vivendi-tinted-palette-overrides
+      `(
+	(fg-main "#cccccc")
+	(fg-mode-line-active "#cccccc")
+	(fg-line-number-active "#cccccc")
+	(date-now "#cccccc")
+	(fg-heading-1 "#cccccc")
+	,@modus-themes-preset-overrides-faint))
+
+(load-theme 'modus-vivendi-tinted :no-confirm)
 
 (setq x-select-enable-clipboard t)
 (setq x-select-enable-primary t)
@@ -57,8 +70,8 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Backups and autosaves
-(let ((backup-dir "~/tmp/emacs/backups/")
-      (auto-saves-dir "~/tmp/emacs/auto-saves/"))
+(let ((backup-dir "~/.tmp/emacs/backups/")
+      (auto-saves-dir "~/.tmp/emacs/auto-saves/"))
   (dolist (dir (list backup-dir auto-saves-dir))
     (when (not (file-directory-p dir))
       (make-directory dir t)))
@@ -95,5 +108,10 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 (put 'upcase-region 'disabled nil)
+
+;; move-text
+(require 'move-text)
+(global-set-key (kbd "M-p") 'move-text-up)
+(global-set-key (kbd "M-n") 'move-text-down)
 
 (load-file custom-file)
